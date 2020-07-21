@@ -19,4 +19,25 @@ function makeRows(rows, cols) {
   }
 }
 
-makeRows(100, 100)
+makeRows(30, 30)
+
+function addHoverToGrid() {
+  let gridItem = document.querySelectorAll('.grid-item')
+  gridItem.forEach((item) => {
+    item.addEventListener('mouseover', function () {
+      this.style.backgroundColor = '#333'
+      this.style.border = '1px solid #333'
+    })
+  })
+}
+
+addHoverToGrid()
+
+// const generateColor = () => {
+//   const randomColor = Math.floor(Math.random() * 16777215).toString(16)
+//   container.target = '#' + randomColor
+//   color.innerHTML = '#' + randomColor
+// }
+
+// genNew.addEventListener('mouseover', generateColors)
+// generateColor()
