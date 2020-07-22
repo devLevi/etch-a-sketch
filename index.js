@@ -33,11 +33,18 @@ function addHoverToGrid() {
 
 addHoverToGrid()
 
-// const generateColor = () => {
-//   const randomColor = Math.floor(Math.random() * 16777215).toString(16)
-//   container.target = '#' + randomColor
-//   color.innerHTML = '#' + randomColor
-// }
+function clearGrid() {
+  let gridItem = document.querySelectorAll('.grid-item')
+  gridItem.forEach((item) => item.remove())
+}
 
-// genNew.addEventListener('mouseover', generateColors)
-// generateColor()
+function resetBtn() {
+  let resetButton = document.querySelector('.reset')
+  resetButton.addEventListener('click', function () {
+    clearGrid()
+    makeRows(30, 30)
+    addHoverToGrid()
+  })
+}
+
+resetBtn()

@@ -10,8 +10,11 @@ root {
 
 .title {
   font-family: 'Source Code Pro', monospace;
+  font-size: 2.5rem;
   text-align: center;
-  transform: translate(0, 250%);
+  transform: translate(0, 300%);
+  color: #daa520;
+  text-shadow: rgba(0, 0, 0, 0.5) 1px 1px 1px;
 }
 
 .titleSpan {
@@ -26,8 +29,8 @@ root {
   display: grid;
   grid-template-rows: repeat(var(--grid-rows), auto);
   grid-template-columns: repeat(var(--grid-cols), auto);
-  border: 100px solid rgb(0, 140, 255);
-  border-radius: 50px;
+  border: 150px solid rgb(255, 51, 0);
+  border-radius: 75px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
 }
 
@@ -40,6 +43,31 @@ root {
   background-color: #bada55;
 } */
 
-.color {
-  background-color: crimson;
+.btn-container {
+  text-align: center;
+  transform: translate(0, -124%);
+}
+
+.knob {
+  height: 90px;
+  width: 90px;
+  border-radius: 50%;
+  outline: none;
+  background-color: #fff;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+}
+.left {
+  margin-right: 340px;
+}
+.right {
+  margin-left: 340px;
+}
+.reset {
+  width: 180px;
+  height: 50px;
+  background-color: black;
+  color: white;
+  outline: none;
+  font-size: 1.5rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
 }
